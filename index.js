@@ -2,6 +2,6 @@ const Discord = require("discord.js")
 let bot = new Discord.Client()
 
 bot.on("message", async message =>{
-  if(message.content == "//ping") message.reply("Pong")
+  if(message.content == "//ping") message.reply(bot.ping)
 })
 bot.login(process.env.token)
